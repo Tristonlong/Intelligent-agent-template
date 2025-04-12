@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true, // 保证可以正确导入 CommonJS 模块
+    "skipLibCheck": true, // 跳过类型检查，避免第三方库类型问题
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node", // 确保按照 Node.js 模块解析规则查找模块
+    "typeRoots": ["node_modules/@types"] // 指定类型声明文件的路径
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
