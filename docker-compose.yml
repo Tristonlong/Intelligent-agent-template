@@ -10,7 +10,7 @@ services:
     depends_on:
       - mongodb # 确保 MongoDB 在后端启动前运行
     environment:
-      - MONGO_URI=mongodb://mongodb:27017/your_database_name # 后端连接 MongoDB 的 URI
+      - MONGO_URI=mongodb://mongodb:27017/my_database # 后端连接 MongoDB 的 URI
 
   frontend:
     build:

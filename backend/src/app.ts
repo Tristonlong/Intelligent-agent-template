@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import authRouter from './routes/auth';
 import { setRoutes } from './routes/index';
 import { connectDB } from './db';
 
@@ -17,10 +18,15 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
 // 初始化路由
 setRoutes(app);
 
 connectDB();
+
+
+// 注册路由
+app.use(authRouter); // 确保注册了 auth 路由
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

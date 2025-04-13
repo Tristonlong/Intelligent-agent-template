@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 // 从环境变量中获取 MongoDB URI
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/your_database_name';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/my_database';
 
 export const connectDB = async () => {
     try {
