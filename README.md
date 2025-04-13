@@ -1,3 +1,5 @@
+技术框架：React ， Express ， MongoDB
+
 # Project Overview
 
 This project is a full-stack application built with TypeScript, React for the frontend, and Express.js for the backend. It serves as a template for creating scalable web applications.
